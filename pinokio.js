@@ -18,8 +18,12 @@ module.exports = {
         }
         return btns
       } else {
-        btns = ["Normal", "Enhancer", "Webcam"].map((label) => {
-          return { icon: "fa-solid fa-photo-film", text: `Launch ${label} Mode`, href: "start.js", params: { run: true, fullscreen: true, mode: label } }
+        btns = [
+          { label: "Normal", icon: "fa-photo-film" },
+          { label: "Enhancer", icon: "fa-solid fa-wand-magic-sparkles" },
+          { label: "Webcam", icon: "fa-video" }
+        ].map(({ icon, label }) => {
+          return { icon: `fa-solid ${icon}`, text: `Launch ${label} Mode`, href: "start.js", params: { run: true, fullscreen: true, mode: label } }
         })
       }
     } else {
