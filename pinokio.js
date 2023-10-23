@@ -33,7 +33,6 @@ module.exports = {
         btns = [{ icon: "fa-solid fa-plug", text: "Install", href: "install.js", params: { run: true, fullscreen: true } }]
       }
     }
-    btns.push({ icon: 'fa-solid fa-rotate', text: "Update", href: "update.json", params: { run: true, fullscreen: true } })
     return btns
   }
 }
