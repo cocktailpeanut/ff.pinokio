@@ -18,7 +18,7 @@ module.exports = async (kernel) => {
   }
   return {
     requires: [
-      { type: "conda", name: "ffmpeg", args: "-c conda-forge" },
+      { type: "conda", name: ["cmake", "ffmpeg"], args: "-c conda-forge" },
       { gpu: "nvidia", name: "cuda" }
     ],
     run: [{
