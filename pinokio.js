@@ -4,7 +4,7 @@ module.exports = {
   icon: "icon.png",
   menu: async (kernel) => {
     let btns
-    let env_installed = await kernel.exists(__dirname, "env")
+    let env_installed = await kernel.exists(__dirname, "facefusion", "env")
     let repo_installed = await kernel.exists(__dirname, "facefusion")
     if (env_installed && repo_installed) {
       if (kernel.running(__dirname, "start.js")) {
