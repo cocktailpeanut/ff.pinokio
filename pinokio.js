@@ -26,7 +26,7 @@ module.exports = {
           return { icon: `fa-solid ${icon}`, text: `Launch ${label} Mode`, href: "start.js", params: { run: true, fullscreen: true, mode: label } }
         })
       }
-      bnts.push({ icon: "fa-solid fa-rotate", text: "Update", href: "update.json", params: { run: true, fullscreen: true } })
+      btns.push({ icon: "fa-solid fa-rotate", text: "Update", href: "update.json", params: { run: true, fullscreen: true } })
     } else {
       if (kernel.platform === "darwin") {
         btns = [{ icon: "fa-solid fa-plug", text: "Install", href: "install.js", params: { run: true, fullscreen: true } }]
