@@ -14,7 +14,7 @@ module.exports = async (kernel) => {
       params: {
         message: "{{self.cmd[local.mode]}}",
         path: "facefusion",
-        conda: "../env",
+        venv: "env",
         on: [{ event: "/(http:\/\/[0-9.:]+)/", done: true }]
       }
     }, {

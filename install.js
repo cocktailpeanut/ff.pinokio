@@ -26,7 +26,7 @@ module.exports = async (kernel) => {
       params: { message: "git clone https://github.com/facefusion/facefusion --branch 1.3.1 --single-branch" }
     }, {
       method: "shell.run",
-      params: { message: cmd, path: "facefusion", conda: "../env", }
+      params: { message: cmd, path: "facefusion", venv: "env" }
     }, {
       method: "input",
       params: { title: "Install Complete", description: "Go back to the dashboard and launch the app!" }
